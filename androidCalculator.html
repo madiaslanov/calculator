@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="main">
+    <div class="return-back">
+      <button class="btn-back" onclick="window.location ='index.html'"> <i class='bx bx-arrow-back'></i>Return-Back</button>
+    </div>
+    
+    <div class="holder">
+    <div class="container2">
+      <div class="android-display">
+        0
+      </div>
+    
+    
+      <div class="android-icons">
+          <div class="container-line">
+          <button onclick="appendClear()" class="android-button red">C</button>
+          <button onclick="appendPercentage()" class="android-button green">%</button>
+          <button onclick="appendOperator('/')" class="android-button green">/</button>
+          <button onclick="remove()" class="android-button green"> <i class='bx bxs-tag-x bx-flip-vertical'></i></button>
+        </div>
+
+          <div class="container-line">
+          <button onclick="appendNumber(7)" class="android-button">7</button>
+          <button onclick="appendNumber(8)" class="android-button">8</button>
+          <button onclick="appendNumber(9)" class="android-button">9</button>
+          <button onclick="appendOperator('*')" class="android-button green">*</button>
+        </div>
+
+          <div class="container-line">
+          <button onclick="appendNumber(4)" class="android-button">4</button>
+          <button onclick="appendNumber(5)" class="android-button">5</button>
+          <button onclick="appendNumber(6)" class="android-button">6</button>
+          <button onclick="appendOperator('-')" class="android-button green">-</button>
+        </div>
+
+          <div class="container-line">
+          <button onclick="appendNumber(1)" class="android-button">1</button>
+          <button onclick="appendNumber(2)" class="android-button">2</button>
+          <button onclick="appendNumber(3)" class="android-button">3</button>
+          <button onclick="appendOperator('+')" class="android-button green">+</button>
+          </div>
+          
+          <div class="container-line container-line-5">
+          <button onclick="toggleSign()" class="android-button">+/-</button>
+            <button onclick="appendNumber(0)" class="android-button">0</button>
+          <button onclick="appendDot('.')" class="android-button">.</button>
+          <button onclick="calculateResult()" class="android-button green equals">=</button>
+          </div>
+          
+          
+          
+        
+      </div>
+  </div>
+</div>
+  
+  </section>
+
+
+
+  <script src="javascriptAndroid.js"></script>
+</body>
+</html>

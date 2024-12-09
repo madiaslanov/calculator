@@ -1,0 +1,289 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body{
+  background-color: #8BC6EC;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculators-holder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.calculator-card img{
+  width: 350px;
+  height: auto;
+  border-radius: 100px;
+}
+.calculator-card .img-iphone{
+  width: 390px;
+  height: auto;
+}
+
+
+.choose{
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.description{
+  font-size: 30px;
+  text-align: center;
+}
+
+.iphone-card a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  transition: 0,8s ;
+}
+
+.iphone-card a:hover{
+  color: rgb(250 150 0);
+}
+
+.samsung-card a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  transition: 0,8s;
+}
+
+.samsung-card a:hover{
+  color: rgb(190 242 100);
+}
+
+.samsung-desc{
+  padding-top: 20px;
+}
+
+
+
+@media screen and (max-width : 499px) {
+  .choose{
+    text-align: center;
+    font-size: 28px;
+  }
+  .calculators-holder{
+    display: block;
+    width: 100%;
+  }
+  
+  .samsung-card{
+    margin-left: 20px;
+  }
+  .iphone-card img{
+    width: 350px;
+  }
+  .description{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .ios-desc{
+    display: flex;
+    margin-left: 20px;
+  }
+} 
+
+
+
+
+/* IOS calculator */
+.holder{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;
+}
+.container {
+  width: 400px; 
+  background-color: black;
+  border-radius: 15px; 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+
+}
+
+.ios-display {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  text-align: right;
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+}
+
+.ios-button {
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.container-line{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.ios-zero{
+  height: 70px;
+  width: 163px;
+  border-radius: 30px;
+  text-align: start;
+  align-items: center;
+  justify-content: start;
+  padding-left: 25px;
+}
+
+.gold{
+  background-color: rgb(234 179 8);
+}
+.silver{
+  background-color: rgb(161 161 170);
+}
+
+.return-back{
+  display: flex;
+  padding: 20px 40px;
+}
+.btn-back{
+  padding: 10px 50px;
+  font-size: 20px;
+  border: 2px solid ;
+  align-items: center;
+  display: flex;
+}
+
+.btn-back:hover{
+  background: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 799px) {
+  .return-back{
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+/* Android calculator */
+
+
+.holder{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;
+}
+.container2 {
+  width: 400px; 
+  background-color: white;
+  border-radius: 15px; 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+
+}
+
+.android-display {
+  width: 100%;
+  height: 60px;
+  color: black;
+  text-align: right;
+  font-size: 32px;
+  padding: 10px;
+  margin-bottom: 20px; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+}
+
+.remove {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: green; 
+  border: none;
+  background: none;
+}
+
+
+.btn-remove {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  width: 100%;
+  padding-right: 10px; 
+}
+
+.android-button {
+  background-color: rgb(245 245 245);
+  color: black;
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.container-line{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+.equals{
+  background-color: green;
+  color: #fff;
+}

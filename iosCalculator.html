@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="main">
+    <div class="return-back">
+      <button class="btn-back" onclick="window.location ='index.html'"> <i class='bx bx-arrow-back'></i>Return-Back</button>
+    </div>
+    
+    <div class="holder">
+    <div class="container">
+      <div class="ios-display">
+        0
+      </div>
+      <div class="ios-icons">
+          <div class="container-line">
+          <button onclick="appendClear()" class="ios-button silver">C</button>
+          <button onclick="toggleSign()" class="ios-button silver">+/-</button>
+          <button onclick="appendPercentage()" class="ios-button silver">%</button>
+          <button onclick="appendOperator('/')" class="ios-button gold">/</button>
+        </div>
+
+          <div class="container-line">
+          <button onclick="appendNumber(7)" class="ios-button">7</button>
+          <button onclick="appendNumber(8)" class="ios-button">8</button>
+          <button onclick="appendNumber(9)" class="ios-button">9</button>
+          <button onclick="appendOperator('*')" class="ios-button gold">*</button>
+        </div>
+
+          <div class="container-line">
+          <button onclick="appendNumber(4)" class="ios-button">4</button>
+          <button onclick="appendNumber(5)" class="ios-button">5</button>
+          <button onclick="appendNumber(6)" class="ios-button">6</button>
+          <button onclick="appendOperator('-')" class="ios-button gold">-</button>
+        </div>
+
+          <div class="container-line">
+          <button onclick="appendNumber(1)" class="ios-button">1</button>
+          <button onclick="appendNumber(2)" class="ios-button">2</button>
+          <button onclick="appendNumber(3)" class="ios-button">3</button>
+          <button onclick="appendOperator('+')" class="ios-button gold">+</button>
+          </div>
+          
+          <div class="container-line container-line-5">
+            <button onclick="appendNumber(0)" class="ios-button ios-zero">0</button>
+          <button onclick="appendDot('.')" class="ios-button">.</button>
+          <button onclick="calculateResult()" class="ios-button gold">=</button>
+          </div>
+          
+          
+          
+        
+      </div>
+  </div>
+</div>
+  
+  </section>
+
+
+
+  <script src="javascriptIos.js"></script>
+</body>
+</html>
